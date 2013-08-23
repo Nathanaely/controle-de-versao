@@ -3,7 +3,7 @@ controle-de-versao
 
 trabalho de II
 
-Histótia :
+História :
 Mercurial é uma ferramenta multi-plataforma de controle de versão distribuído para desenvolvedores de software. 
 O sistema é implementado principalmente em Python, porém o utilitário binário diff foi escrito em C. 
 Mercurial foi inicialmente escrito para rodar sobre Linux, mas foi portado para Windows, Mac OS X, 
@@ -18,3 +18,29 @@ Além disso, há uma ferramenta gráfica que auxilia em todas as tarefas relacio
 Trata-se do Tortoise HG (http://tortoisehg.bitbucket.org). Este utilitário é integrado ao Windows Explorer.
 Como estavamos acostumados ao SVN, foi necessário fazer algumas configurações 
 adicionais para que o Mercurial funcionasse de maneira parecida àquela que estavamos acostumados.
+
+
+forma de criar um repositório:
+
+Criando um Repositório
+
+Crie um repositório com o comando hg init:
+
+alice$ ls
+alice$ hg init example
+alice$ ls
+example
+O comando hg init criou um novo diretório que é o novo repositório. 
+Poderíamos ter criados o diretório example e depois executado o comando hg init sem parâmetros
+dentro desse diretório para torná-lo um repositório.
+
+Entrando no diretório example pode-se observar:
+
+alice$ cd example
+alice$ ls -a
+.
+..
+.hg
+Como você pode ver, o novo diretório está vazio exceto por um diretório .
+hg na raiz do diretório. O Mercurial armazena o histórico e outros arquivos administrativos neste diretório.
+
